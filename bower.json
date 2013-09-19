@@ -1,0 +1,31 @@
+{
+  "name": "BOEW-a11yQc",
+  "version": "1.0.0",
+  "homepage": "https://Laurent.Goderregithub.io/BOEW-a11yQc",
+  "authors": [
+    {
+      "name": "Laurent Goderre",
+      "url": "https://github.com/LaurentGoderre"
+    }
+  ],
+  "description": "Présentation sur la Boîte à outils de l’expérience Web présenté à a11yQc en octobre 2013",
+  "keywords": [
+    "framework",
+    "web",
+    "html5",
+    "WCAG2.0",
+    "accessiblity",
+    "usability",
+    "interoperability",
+    "mobile",
+    "multilingual",
+    "i18n",
+    "a11y",
+    "wet-boew",
+    "a11yQc"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "reveal.js":"2.5.0"
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>La Boîte à outils de l’expérience Web</title>
+		<link rel="stylesheet" href="{{assets}}/reveal.js/css/reveal.min.css">
+		<style>h1{height: 1px !important;width: 1px !important;clip: rect(1px, 1px, 1px, 1px);overflow: hidden !important;position: absolute;margin: 0 !important;}</style>
+	</head>
+	<body>
+		<h1>La Boîte à outils de l’expérience Web</h1>
+		<div class="reveal">
+			<div class="slides">
+				{{>slide1}}
+				{{>slide2}}
+			</div>
+		</div>
+		<script src="{{assets}}/reveal.js/lib/js/head.min.js"></script>
+		<script src="{{assets}}/reveal.js/js/reveal.min.js"></script>
+		<script>
+			Reveal.initialize();
+		</script>
+	</body>
+</html>
