@@ -7,6 +7,7 @@ module.exports = (grunt) ->
 		pkg: grunt.file.readJSON("package.json")
 		banner: "/*! Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html\n" +
 				" - v<%= pkg.version %> - " + "<%= grunt.template.today(\"yyyy-mm-dd\") %>\n*/\n"
+		revealJsTheme: "sky"
 
 		# Task configuration.
 
@@ -24,6 +25,8 @@ module.exports = (grunt) ->
 				partials: ["src/includes/**/*.hbs"]
 
 			site:
+				options:
+					theme: "<%= revealJsTheme %>"
 				cwd: "src"
 				src: ["*.hbs"]
 				dest: "dist/"
@@ -37,6 +40,12 @@ module.exports = (grunt) ->
 					"**/*.min.css"
 				]
 				dest: "dist/reveal.js"
+				expand: true
+
+			revealjs_theme:
+				cwd: "lib/reveal.js/css"
+				src: "theme/<%= revealJsTheme %>.css"
+				dest: "dist/reveal.js/css"
 				expand: true
 
 		clean:
