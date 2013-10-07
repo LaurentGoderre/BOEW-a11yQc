@@ -48,6 +48,12 @@ module.exports = (grunt) ->
 				dest: "dist/reveal.js/css"
 				expand: true
 
+			assets:
+				cwd: "src"
+				src: "assets/**/*"
+				dest: "dist"
+				expand: true
+
 		clean:
 			dist: "dist"
 
