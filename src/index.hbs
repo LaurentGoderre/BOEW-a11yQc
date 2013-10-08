@@ -7,21 +7,25 @@
 		<link rel="stylesheet" href="{{assets}}/reveal.js/css/theme/{{theme}}.css">
 		<style>
 			h1{height: 1px !important;width: 1px !important;clip: rect(1px, 1px, 1px, 1px);overflow: hidden !important;position: absolute;margin: 0 !important;}
+			.reveal h2 {font-weight:600;}
 			.reveal p, .reveal li {margin-bottom:1.2em;}
 			.reveal ul {margin: 0 0 0 25%;}
 			#wet {width:50%; height:50%; margin:2em 0; }
 			#wcag, #html5 {width:25%; height:25%; margin: 1em 0;}
+			#independence ~ svg {height:3em;max-width:50%; margin:1em;}
 		</style>
 	</head>
 	<body>
 		<h1>La Boîte à outils de l’expérience Web</h1>
 		<div class="reveal">
 			<div class="slides">
-				{{>1_intro}}
-				{{>2_accessible}}
-				{{>3_facile_emploi}}
-				{{>4_interoperable}}
-				{{>5_optimise_mobile}}
+				{{>01_intro}}
+				{{>02_accessible}}
+				{{>03_facile_emploi}}
+				{{>04_interoperable}}
+				{{>05_optimise_mobile}}
+				{{>06_presentation_personalisable}}
+				{{>07_indepedence_plateforme}}
 			</div>
 		</div>
 		<script src="{{assets}}/reveal.js/lib/js/head.min.js"></script>
