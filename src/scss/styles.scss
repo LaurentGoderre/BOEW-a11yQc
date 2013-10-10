@@ -1,0 +1,97 @@
+@import '../../lib/reveal.js/css/theme/sky.css';
+
+@mixin image-large{
+	height: 3em;
+	max-width: 50%; 
+}
+
+@mixin image-medium {
+	height:2em;max-width :25%;
+}
+
+@mixin margin-large {
+	margin: 2em;
+}
+
+@mixin margin-medium {
+	margin: 1em;
+}
+
+@mixin margin-small {
+	margin: 0.5em;
+}
+
+h1{
+	height: 1px !important;
+	width: 1px !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden !important;
+	position: absolute;
+	margin: 0 !important;
+}
+
+.reveal {
+	h2 {
+		font-weight: 600; 
+		line-height: 1.2;
+	}
+
+	ul {
+		margin: 0 0 0 25%;
+	}
+
+	p, li {
+		margin-bottom: 1.2em;
+	}
+}
+
+#wet {
+	width: 50%;
+	height: 50%;
+	@include margin-large;
+}
+
+#wcag {
+	@include margin-medium;
+	@include image-large;
+}
+
+#html5 {
+	width: 25%;
+	max-height: 50%;
+	@include margin-medium;
+}
+
+#independence {
+	& ~ svg{
+		@include image-large; 
+		@include margin-medium;
+	}
+}
+
+#bienvenue_bootstrap {
+	& ~ svg {
+		@include image-large; 
+		@include margin-small;
+	}
+}
+
+#libre_gratuite {
+	& ~ a {
+		svg {
+			@include image-medium;
+			@include margin-small;
+		}
+	} 
+}
+
+#quest_ce_que {
+	& ~ p {
+		line-height: 1.5;
+	}
+}
+
+#github {
+	height: 1em; 
+	max-width: 25%;
+}
