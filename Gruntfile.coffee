@@ -67,10 +67,18 @@ module.exports = (grunt) ->
 				"*.txt"
 			]
 
+		connect:
+			server:
+				options:
+					port: 8000
+					base: "dist"
+					keepalive: true
+
 
 	# These plugins provide necessary tasks.
 	@loadNpmTasks "assemble"
 	@loadNpmTasks "grunt-contrib-clean"
+	@loadNpmTasks "grunt-contrib-connect"
 	@loadNpmTasks "grunt-contrib-copy"
 	@loadNpmTasks "grunt-gh-pages"
 
