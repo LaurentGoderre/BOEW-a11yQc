@@ -52,7 +52,7 @@ h1{
 }
 
 #wcag {
-	@include margin-medium;
+	@include margin-small;
 	@include image-large;
 }
 
@@ -72,7 +72,6 @@ h1{
 #bienvenue_bootstrap {
 	& ~ svg {
 		@include image-large; 
-		@include margin-small;
 	}
 }
 
@@ -88,6 +87,12 @@ h1{
 #quest_ce_que {
 	& ~ p {
 		line-height: 1.5;
+	}
+}
+
+#optimise_mobile {
+	& ~ p {
+		margin-bottom:0.5em;
 	}
 }
 
