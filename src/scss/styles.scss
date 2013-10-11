@@ -45,7 +45,7 @@ h1{
 	}
 }
 
-#wet {
+#wet, #contact ~ svg {
 	width: 50%;
 	height: 50%;
 	@include margin-large;
