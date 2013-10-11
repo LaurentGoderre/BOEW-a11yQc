@@ -48,8 +48,22 @@ h1{
 #wet, #contact ~ svg {
 	width: 50%;
 	height: 50%;
-	@include margin-large;
+	@include margin-medium;
 }
+
+#a11yqc {
+	@include image-medium;
+	position: absolute;
+	left: 0;
+
+	& ~ p {
+		text-align: right;
+		font-size: 0.8em;
+		padding: 0.66em 0;
+	}
+}
+
+
 
 #wcag {
 	@include margin-small;
